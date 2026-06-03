@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "NIRANJAN AGNIVESH PORTFOLIO" },
+      { name: "description", content: "Niranjan's Digital Garden is a personal portfolio website showcasing a Mechanical Engineering student's diverse skills and achievements." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "NIRANJAN AGNIVESH PORTFOLIO" },
+      { property: "og:description", content: "Niranjan's Digital Garden is a personal portfolio website showcasing a Mechanical Engineering student's diverse skills and achievements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "NIRANJAN AGNIVESH PORTFOLIO" },
+      { name: "twitter:description", content: "Niranjan's Digital Garden is a personal portfolio website showcasing a Mechanical Engineering student's diverse skills and achievements." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/zo0yhi38BYaFruTleKnBuYl9bVD3/social-images/social-1780490553860-WhatsApp_Image_2026-05-26_at_6.01.06_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/zo0yhi38BYaFruTleKnBuYl9bVD3/social-images/social-1780490553860-WhatsApp_Image_2026-05-26_at_6.01.06_PM.webp" },
     ],
     links: [
       {
