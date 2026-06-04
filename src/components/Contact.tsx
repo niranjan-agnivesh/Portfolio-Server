@@ -7,10 +7,10 @@ export function Contact() {
       <div className="grid lg:grid-cols-[1fr_1.2fr] gap-6">
         <div className="space-y-3">
           {[
-            { icon: Mail, label: "Email", value: "hello@niranjan.dev", href: "mailto:hello@niranjan.dev" },
+            { icon: Mail, label: "Email", value: "niranjanagniveshkb@gmail.com", href: "mailto:niranjanagniveshkb@gmail.com" },
             { icon: MessageCircle, label: "WhatsApp", value: "Message on WhatsApp", href: "#" },
-            { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/niranjan", href: "https://linkedin.com" },
-            { icon: Github, label: "GitHub", value: "github.com/niranjan", href: "https://github.com" },
+            { icon: Linkedin, label: "LinkedIn", value: "niranjan-agnivesh-k-b", href: "https://www.linkedin.com/in/niranjan-agnivesh-k-b-a38644291" },
+            { icon: Github, label: "GitHub", value: "github.com/niranjan-agnivesh", href: "https://github.com/niranjan-agnivesh" },
             { icon: MapPin, label: "Location", value: "Kerala, India 🇮🇳" },
           ].map((c) => {
             const Inner = (

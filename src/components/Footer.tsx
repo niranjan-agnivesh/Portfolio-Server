@@ -7,9 +7,9 @@ export function Footer() {
         <div className="font-mono text-primary">&lt;Niranjan /&gt;</div>
         <p className="font-serif italic">Built with Carpe Diem energy ☀️</p>
         <div className="flex items-center gap-4">
-          <a href="https://github.com" aria-label="GitHub" className="hover:text-primary"><Github className="w-4 h-4" /></a>
-          <a href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-primary"><Linkedin className="w-4 h-4" /></a>
-          <a href="mailto:hello@niranjan.dev" aria-label="Email" className="hover:text-primary"><Mail className="w-4 h-4" /></a>
+          <a href="https://github.com/niranjan-agnivesh" aria-label="GitHub" className="hover:text-primary"><Github className="w-4 h-4" /></a>
+          <a href="https://www.linkedin.com/in/niranjan-agnivesh-k-b-a38644291" aria-label="LinkedIn" className="hover:text-primary"><Linkedin className="w-4 h-4" /></a>
+          <a href="mailto:niranjanagniveshkb@gmail.com" aria-label="Email" className="hover:text-primary"><Mail className="w-4 h-4" /></a>
           <span className="text-xs">© {new Date().getFullYear()}</span>
         </div>
       </div>

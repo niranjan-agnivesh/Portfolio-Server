@@ -6,7 +6,6 @@ import heroBg from "@/assets/hero-bg.jpg";
 const roles = [
   "Mechanical Engineer",
   "Robotics Enthusiast",
-  "Mime Artist",
   "Bonsai Grower",
   "Carpe Diem 🌿",
 ];
