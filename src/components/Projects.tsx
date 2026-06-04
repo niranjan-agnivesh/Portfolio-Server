@@ -6,7 +6,7 @@ type Project = {
   title: string;
   description: string;
   tags: string[];
-  category: string;
+  category: string[];
   status: "live" | "soon";
   github?: string;
 };
@@ -16,22 +16,22 @@ const projects: Project[] = [
     title: "Acoustic Fire EXtinguisher Robot",
     description: "Arduino-based robot for detecting and extinguishing fires using acoustic sensors.",
     tags: ["Arduino", "C++", "PID", "Sensors"],
-    category: "Robotics",
+    category: ["Robotics", "Embedded", "IoT"],
     status: "live",
     github: "https://github.com/niranjan-agnivesh/Automatic-Urban-Response-and-Assistance.git",
   },
-  { title: "6-DOF Robotic Arm (ROS 2)", description: "Coming soon — URDF model, MoveIt planning, Gazebo simulation, and pick-and-place demo.", tags: ["ROS 2", "Python", "Gazebo"], category: "Robotics", status: "soon" },
-  { title: "Parametric Bicycle Frame", description: "Coming soon — SolidWorks parametric CAD model with FEA stress analysis under rider load.", tags: ["SolidWorks", "ANSYS"], category: "CAD", status: "soon" },
-  { title: "Smart Bonsai Monitor", description: "Coming soon — ESP32-based soil moisture, light, and temperature monitor with mobile dashboard.", tags: ["ESP32", "IoT"], category: "Embedded", status: "soon" },
-  { title: "Heat Exchanger Optimizer", description: "Coming soon — Python tool for shell-and-tube heat exchanger sizing and pressure-drop analysis.", tags: ["Python", "NumPy"], category: "Software", status: "soon" },
-  { title: "Mime Performance Tracker", description: "Coming soon — Web app to log performances, score routines, and track student progress.", tags: ["Web", "TypeScript"], category: "Software", status: "soon" },
+  { title: "6-DOF Robotic Arm (ROS 2)", description: "Coming soon — URDF model, MoveIt planning, Gazebo simulation, and pick-and-place demo.", tags: ["ROS 2", "Python", "Gazebo"], category: ["Robotics"], status: "soon" },
+  { title: "Parametric Bicycle Frame", description: "Coming soon — SolidWorks parametric CAD model with FEA stress analysis under rider load.", tags: ["SolidWorks", "ANSYS"], category: ["CAD","Mechanical"], status: "soon" },
+  { title: "Smart Bonsai Monitor", description: "Coming soon — ESP32-based soil moisture, light, and temperature monitor with mobile dashboard.", tags: ["ESP32", "IoT"], category: ["Embedded"], status: "soon" },
+  { title: "Heat Exchanger Optimizer", description: "Coming soon — Python tool for shell-and-tube heat exchanger sizing and pressure-drop analysis.", tags: ["Python", "NumPy"], category: ["Software"], status: "soon" },
+  { title: "Mime Performance Tracker", description: "Coming soon — Web app to log performances, score routines, and track student progress.", tags: ["Web", "TypeScript"], category: ["Software"], status: "soon" },
 ];
 
 const filters = ["All", "Robotics", "Mechanical", "Embedded", "Software", "CAD"];
 
 export function Projects() {
   const [active, setActive] = useState("All");
-  const filtered = active === "All" ? projects : projects.filter((p) => p.category === active);
+  const filtered = active === "All" ? projects : projects.filter((p) => p.category.includes(active));
 
   return (
     <Section id="projects" eyebrow="projects" title="Things I've built (and am building)." subtitle="A growing collection. New work ships often.">
@@ -58,7 +58,9 @@ export function Projects() {
             className="group glass-card rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:border-primary transition-all duration-300"
           >
             <div className="flex items-center justify-between mb-4">
-              <span className="text-xs font-mono uppercase tracking-wider text-primary">{p.category}</span>
+              <span className="text-xs font-mono uppercase tracking-wider text-primary">
+  {p.category.join(" • ")}
+</span>
               {p.status === "soon" && (
                 <span className="inline-flex items-center gap-1 text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
                   <Lock className="w-3 h-3" /> Coming soon
