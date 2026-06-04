@@ -13,12 +13,12 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Autonomous Line-Follower Bot",
-    description: "Arduino-based differential drive bot with IR sensor array, PID control, and obstacle avoidance using ultrasonic sensors.",
+    title: "Acoustic Fire EXtinguisher Robot",
+    description: "Arduino-based robot for detecting and extinguishing fires using acoustic sensors.",
     tags: ["Arduino", "C++", "PID", "Sensors"],
     category: "Robotics",
     status: "live",
-    github: "https://github.com",
+    github: "https://github.com/niranjan-agnivesh/Automatic-Urban-Response-and-Assistance.git",
   },
   { title: "6-DOF Robotic Arm (ROS 2)", description: "Coming soon — URDF model, MoveIt planning, Gazebo simulation, and pick-and-place demo.", tags: ["ROS 2", "Python", "Gazebo"], category: "Robotics", status: "soon" },
   { title: "Parametric Bicycle Frame", description: "Coming soon — SolidWorks parametric CAD model with FEA stress analysis under rider load.", tags: ["SolidWorks", "ANSYS"], category: "CAD", status: "soon" },
