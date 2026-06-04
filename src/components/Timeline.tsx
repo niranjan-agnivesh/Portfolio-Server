@@ -3,13 +3,9 @@ import { Section } from "./Section";
 const events = [
   { year: "Early Years", icon: "🏗️", title: "First builds", text: "Took apart every toy I owned. Won my first school science fair." },
   { year: "School", icon: "🎬", title: "The spark", text: "A movie scene with a robot. Locked in the robotics dream forever." },
-  { year: "School", icon: "🎭", title: "Mime, on stage", text: "First competition wins; discovered storytelling without words." },
-  { year: "Junior", icon: "⛸️", title: "State-level skater", text: "Represented at state competitions — speed and balance training." },
-  { year: "Senior", icon: "🏸", title: "Sepak takraw", text: "State-level player — coordination, reflexes, teamwork." },
   { year: "Senior", icon: "🏆", title: "Kalolsavam winner", text: "State Kalolsavam champion in mime performance." },
   { year: "2023", icon: "🎓", title: "Joined KTU", text: "Started B.Tech in Mechanical Engineering." },
   { year: "2024", icon: "🤖", title: "Hello, ROS 2", text: "Began the deep dive into modern robotics frameworks." },
-  { year: "2024", icon: "🌱", title: "Bonsai begins", text: "Started cultivating bonsai — patience as engineering practice." },
   { year: "2025", icon: "📡", title: "NSS leadership", text: "Leading community service initiatives on campus." },
   { year: "Now", icon: "🚀", title: "Building real robots", text: "First major robotics project shipping soon." },
 ];

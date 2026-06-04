@@ -1,0 +1,30 @@
+[1mdiff --git a/src/components/Timeline.tsx b/src/components/Timeline.tsx[m
+[1mindex 99bf114..b542f3a 100644[m
+[1m--- a/src/components/Timeline.tsx[m
+[1m+++ b/src/components/Timeline.tsx[m
+[36m@@ -3,13 +3,9 @@[m [mimport { Section } from "./Section";[m
+ const events = [[m
+   { year: "Early Years", icon: "🏗️", title: "First builds", text: "Took apart every toy I owned. Won my first school science fair." },[m
+   { year: "School", icon: "🎬", title: "The spark", text: "A movie scene with a robot. Locked in the robotics dream forever." },[m
+[31m-  { year: "School", icon: "🎭", title: "Mime, on stage", text: "First competition wins; discovered storytelling without words." },[m
+[31m-  { year: "Junior", icon: "⛸️", title: "State-level skater", text: "Represented at state competitions — speed and balance training." },[m
+[31m-  { year: "Senior", icon: "🏸", title: "Sepak takraw", text: "State-level player — coordination, reflexes, teamwork." },[m
+   { year: "Senior", icon: "🏆", title: "Kalolsavam winner", text: "State Kalolsavam champion in mime performance." },[m
+   { year: "2023", icon: "🎓", title: "Joined KTU", text: "Started B.Tech in Mechanical Engineering." },[m
+   { year: "2024", icon: "🤖", title: "Hello, ROS 2", text: "Began the deep dive into modern robotics frameworks." },[m
+[31m-  { year: "2024", icon: "🌱", title: "Bonsai begins", text: "Started cultivating bonsai — patience as engineering practice." },[m
+   { year: "2025", icon: "📡", title: "NSS leadership", text: "Leading community service initiatives on campus." },[m
+   { year: "Now", icon: "🚀", title: "Building real robots", text: "First major robotics project shipping soon." },[m
+ ];[m
+[1mdiff --git a/src/routes/index.tsx b/src/routes/index.tsx[m
+[1mindex 563c0b0..089a52f 100644[m
+[1m--- a/src/routes/index.tsx[m
+[1m+++ b/src/routes/index.tsx[m
+[36m@@ -10,6 +10,7 @@[m [mimport { Blog } from "@/components/Blog";[m
+ import { Contact } from "@/components/Contact";[m
+ import { Footer } from "@/components/Footer";[m
+ [m
+[32m+[m
+ export const Route = createFileRoute("/")({[m
+   head: () => ({[m
+     meta: [[m
